@@ -1,5 +1,9 @@
 # hunterkilltree-ui-lib
 
+### Tech
+
+typescript + vite + reactJs + tailwind + storybook
+
 ### Create project
 
 `npm create vite@latest`
