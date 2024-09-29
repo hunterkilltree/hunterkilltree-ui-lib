@@ -17,6 +17,11 @@ npm install
 npm run dev
 ```
 
+### Git tree
+
+Using squash merge to help the git tree straight.
+Remember final commit is the commit that we will see in source control graph
+
 ### Usage
 
 Library for generic component
