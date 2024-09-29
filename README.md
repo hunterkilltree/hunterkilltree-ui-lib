@@ -2,11 +2,20 @@
 
 ### Tech
 
-typescript + vite + reactJs + tailwind + storybook
+typescript + vite + react + tailwind + storybook
+
+### Node version 20.9.0
 
 ### Create project
 
 `npm create vite@latest`
+
+### Start
+
+```
+npm install
+npm run dev
+```
 
 ### Usage
 
