@@ -10,6 +10,11 @@ typescript + vite + react + tailwind + storybook
 
 `npm create vite@latest`
 
+Note: If your TypeScript linter complains about 'path' and \_\_dirname just install the types for node: `npm i @types/node -D`
+
+ship type definitions with your package
+`npm i vite-plugin-dts -D`
+
 ### Start
 
 ```
