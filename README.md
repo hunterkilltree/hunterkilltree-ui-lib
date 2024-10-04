@@ -19,7 +19,8 @@ ship type definitions with your package
 
 ```
 npm install
-npm run dev
+npm run build
+npm run storybook
 ```
 
 ### Git tree
@@ -33,7 +34,4 @@ Using rebase and merge
 Library for generic component
 
 https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma
-
-a
-b
-c
+https://flowbite.com/docs/components/accordion/
