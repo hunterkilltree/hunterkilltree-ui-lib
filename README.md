@@ -15,12 +15,22 @@ Note: If your TypeScript linter complains about 'path' and \_\_dirname just inst
 ship type definitions with your package
 `npm i vite-plugin-dts -D`
 
-### Start
+### Install dependency
 
 ```
 npm install
+```
+
+### Build package
+
+```
 npm run build
-npm run storybook
+```
+
+### Start storybook
+
+```
+npm run storybook 
 ```
 
 ### Git tree
