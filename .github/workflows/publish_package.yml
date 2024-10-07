@@ -1,0 +1,37 @@
+name: Publish package to GitHub Packages
+
+on:
+  pull_request:
+    branches:
+    - release
+    types: [closed]
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+      steps:
+      # Checkout the repository code
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+        # Set up Node.js and configure npm to use GitHub Packages registry
+        with:
+          node-version: "20.9.0"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@hunterkilltree"
+
+      # Install dependencies using npm ci for faster installation
+      - run: npm ci
+
+      # Run npm build if needed (optional, include if you have a build step)
+      - run: npm run build
+
+      # Publish the package to GitHub Packages
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

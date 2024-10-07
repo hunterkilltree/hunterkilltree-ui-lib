@@ -1,8 +1,12 @@
 {
-  "name": "hunterkilltree-ui-lib",
-  "private": true,
+  "name": "@hunterkilltree/ui-lib",
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/ui-lib.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b ./tsconfig.lib.json && vite build",
@@ -11,8 +15,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "hunterkilltree-ui-lib": "file:",
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -49,5 +52,8 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "dependencies": {
+    "@hunterkilltree/ui-lib": "file:"
   }
 }
