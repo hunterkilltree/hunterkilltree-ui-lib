@@ -32,10 +32,18 @@ jobs:
 
     # Install dependencies using npm ci for faster installation
     - run: npm ci
+    # Install dependencies using npm ci for faster installation
+    - run: npm ci
 
     # Run npm build if needed (optional, include if you have a build step)
     - run: npm run build
+    # Run npm build if needed (optional, include if you have a build step)
+    - run: npm run build
 
+    # Publish the package to GitHub Packages
+    - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     # Publish the package to GitHub Packages
     - run: npm publish
       env:
