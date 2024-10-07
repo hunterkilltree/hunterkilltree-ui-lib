@@ -18,13 +18,10 @@ jobs:
     # Checkout the repository code
     - uses: actions/checkout@v4
       with:
-      # The branch, tag or SHA to checkout. When checking out the repository that
-      # triggered a workflow, this defaults to the reference or SHA for that event.
-      # Otherwise, defaults to `master`.
-      ref: 'release'
-    - uses: actions/setup-node@v4
+        ref: 'release'
 
-      # Set up Node.js and configure npm to use GitHub Packages registry
+    # Set up Node.js and configure npm to use GitHub Packages registry
+    - uses: actions/setup-node@v4
       with:
         node-version: "20.9.0"
         registry-url: "https://npm.pkg.github.com"
@@ -32,18 +29,10 @@ jobs:
 
     # Install dependencies using npm ci for faster installation
     - run: npm ci
-    # Install dependencies using npm ci for faster installation
-    - run: npm ci
 
     # Run npm build if needed (optional, include if you have a build step)
     - run: npm run build
-    # Run npm build if needed (optional, include if you have a build step)
-    - run: npm run build
 
-    # Publish the package to GitHub Packages
-    - run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     # Publish the package to GitHub Packages
     - run: npm publish
       env:
