@@ -17,6 +17,12 @@ ship type definitions with your package
 
 `npm i tailwind-merge`
 
+`npm install @floating-ui/react`
+
+`npm i debounce`
+
+`npm install classnames`
+
 ### Install dependency
 
 ```

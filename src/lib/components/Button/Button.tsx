@@ -1,7 +1,7 @@
-import type { ElementType } from "react";
+import type { ElementType, ForwardedRef } from "react";
 import { forwardRef, type ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import type { PolymorphicComponentPropWithRef, PolymorphicRef } from "../../helpers/generic-as-prop";
+import type { PolymorphicComponentPropWithRef } from "../../helpers/generic-as-prop";
 import { mergeDeep } from "../../helpers/merge-deep";
 import { getTheme } from "../../theme-store";
 import type { DeepPartial, DynamicStringEnumKeysOf } from "../../types";
@@ -113,7 +113,7 @@ const ButtonComponent = forwardRef(
       theme: customTheme = {},
       ...props
     }: ButtonProps<T>,
-    ref: PolymorphicRef<T>,
+    ref: ForwardedRef<T>,
   ) => {
     const { buttonGroup: groupTheme, button: buttonTheme } = getTheme();
     const theme = mergeDeep(buttonTheme, customTheme);
