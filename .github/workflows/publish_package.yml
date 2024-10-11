@@ -4,36 +4,33 @@ on:
   pull_request:
     branches:
     - release
-    types: [closed]
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+  runs-on: ubuntu-latest
+  permissions:
+    contents: read
+    packages: write
 
-    steps:
-    # Checkout the repository code
-    - uses: actions/checkout@v4
-      with:
-        ref: 'release'
+  steps:
+  # Checkout the repository code
+  - uses: actions/checkout@v4
+    with:
+      ref: 'release' # This ensures that the code checked out is from the release branch
 
-    # Set up Node.js and configure npm to use GitHub Packages registry
-    - uses: actions/setup-node@v4
-      with:
-        node-version: "20.9.0"
-        registry-url: "https://npm.pkg.github.com"
-        scope: "@hunterkilltree"
+  # Set up Node.js and configure npm to use GitHub Packages registry
+  - uses: actions/setup-node@v4
+    with:
+      node-version: "20.9.0"
+      registry-url: "https://npm.pkg.github.com"
+      scope: "@hunterkilltree"
 
-    # Install dependencies using npm ci for faster installation
-    - run: npm ci
+  # Install dependencies using npm ci for faster installation
+  - run: npm ci
 
-    # Run npm build if needed (optional, include if you have a build step)
-    - run: npm run build
+  # Run npm build if needed (optional, include if you have a build step)
+  - run: npm run build
 
-    # Publish the package to GitHub Packages
-    - run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # Publish the package to GitHub Packages
+  - run: npm publish
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
