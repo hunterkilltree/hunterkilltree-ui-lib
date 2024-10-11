@@ -54,6 +54,7 @@
     ]
   },
   "dependencies": {
-    "@hunterkilltree/ui-lib": "file:"
+    "@hunterkilltree/ui-lib": "file:",
+    "tailwind-merge": "^2.5.3"
   }
 }

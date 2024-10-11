@@ -15,6 +15,8 @@ Note: If your TypeScript linter complains about 'path' and \_\_dirname just inst
 ship type definitions with your package
 `npm i vite-plugin-dts -D`
 
+`npm i tailwind-merge`
+
 ### Install dependency
 
 ```
