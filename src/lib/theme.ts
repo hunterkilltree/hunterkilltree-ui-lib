@@ -1,5 +1,5 @@
 import type { FlowbiteTheme } from "./components/Flowbite/FlowbiteTheme";
-// import { accordionTheme } from "./components/Accordion/theme";
+import { accordionTheme } from "./components/Accordion/theme";
 // import { alertTheme } from "./components/Alert/theme";
 // import { avatarTheme } from "./components/Avatar/theme";
 // import { badgeTheme } from "./components/Badge/theme";
@@ -45,7 +45,7 @@ import { spinnerTheme } from "./components/Spinner/theme";
 // import { tooltipTheme } from "./components/Tooltip/theme";
 
 export const theme: FlowbiteTheme = {
-  // accordion: accordionTheme,
+  accordion: accordionTheme,
   // alert: alertTheme,
   // avatar: avatarTheme,
   // badge: badgeTheme,
