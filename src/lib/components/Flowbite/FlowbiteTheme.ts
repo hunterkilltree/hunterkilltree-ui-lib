@@ -15,7 +15,7 @@ import type { FlowbiteButtonGroupTheme, FlowbiteButtonTheme } from "../Button";
 // import type { FlowbiteDrawerTheme } from "../Drawer";
 // import type { FlowbiteDropdownTheme } from "../Dropdown";
 // import type { FlowbiteFileInputTheme } from "../FileInput";
-// import type { FlowbiteFloatingLabelTheme } from "../FloatingLabe";
+import type { FlowbiteFloatingLabelTheme } from "../FloatingLabel";
 // import type { FlowbiteFooterTheme } from "../Footer";
 // import type { FlowbiteHelperTextTheme } from "../HelperText";
 // import type { FlowbiteHRTheme } from "../HR/HR";
