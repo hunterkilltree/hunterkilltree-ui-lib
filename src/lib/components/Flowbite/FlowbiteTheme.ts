@@ -1,5 +1,5 @@
 import type { DeepPartial } from "../../types";
-// import type { FlowbiteAccordionTheme } from "../Accordion";
+import type { FlowbiteAccordionTheme } from "../Accordion";
 // import type { FlowbiteAlertTheme } from "../Alert";
 // import type { FlowbiteAvatarTheme } from "../Avatar";
 // import type { FlowbiteBadgeTheme } from "../Badge";
@@ -47,7 +47,7 @@ import type { FlowbiteSpinnerTheme } from "../Spinner";
 export type CustomFlowbiteTheme = DeepPartial<FlowbiteTheme>;
 
 export interface FlowbiteTheme {
-  // accordion: FlowbiteAccordionTheme;
+  accordion: FlowbiteAccordionTheme;
   // alert: FlowbiteAlertTheme;
   // avatar: FlowbiteAvatarTheme;
   // badge: FlowbiteBadgeTheme;
