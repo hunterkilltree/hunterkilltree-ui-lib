@@ -15,7 +15,7 @@ import type { FlowbiteButtonGroupTheme, FlowbiteButtonTheme } from "../Button";
 // import type { FlowbiteDrawerTheme } from "../Drawer";
 // import type { FlowbiteDropdownTheme } from "../Dropdown";
 // import type { FlowbiteFileInputTheme } from "../FileInput";
-// import type { FlowbiteFloatingLabelTheme } from "../FloatingLabel";
+import type { FlowbiteFloatingLabelTheme } from "../FloatingLabel";
 // import type { FlowbiteFooterTheme } from "../Footer";
 // import type { FlowbiteHelperTextTheme } from "../HelperText";
 // import type { FlowbiteHRTheme } from "../HR/HR";
@@ -64,7 +64,7 @@ export interface FlowbiteTheme {
   // drawer: FlowbiteDrawerTheme;
   // dropdown: FlowbiteDropdownTheme;
   // fileInput: FlowbiteFileInputTheme;
-  // floatingLabel: FlowbiteFloatingLabelTheme;
+  floatingLabel: FlowbiteFloatingLabelTheme;
   // footer: FlowbiteFooterTheme;
   // helperText: FlowbiteHelperTextTheme;
   // hr: FlowbiteHRTheme;

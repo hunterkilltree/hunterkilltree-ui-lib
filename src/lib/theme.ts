@@ -15,7 +15,7 @@ import { buttonGroupTheme, buttonTheme } from "./components/Button/theme";
 // import { drawerTheme } from "./components/Drawer/theme";
 // import { dropdownTheme } from "./components/Dropdown/theme";
 // import { fileInputTheme } from "./components/FileInput/theme";
-// import { floatingLabelTheme } from "./components/FloatingLabel/theme";
+import { floatingLabelTheme } from "./components/FloatingLabel/theme";
 // import { footerTheme } from "./components/Footer/theme";
 // import { helperTextTheme } from "./components/HelperText/theme";
 // import { hrTheme } from "./components/HR/theme";
@@ -62,7 +62,7 @@ export const theme: FlowbiteTheme = {
   // drawer: drawerTheme,
   // dropdown: dropdownTheme,
   // fileInput: fileInputTheme,
-  // floatingLabel: floatingLabelTheme,
+  floatingLabel: floatingLabelTheme,
   // footer: footerTheme,
   // helperText: helperTextTheme,
   // hr: hrTheme,
