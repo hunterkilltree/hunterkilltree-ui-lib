@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  publish:
+  check-build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
