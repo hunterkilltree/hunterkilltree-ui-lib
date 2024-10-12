@@ -1,0 +1,40 @@
+name: Check Build Success
+
+on:
+  pull_request:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    # Checkout the repository code
+    - uses: actions/checkout@v4
+
+    # Set up Node.js and configure npm to use GitHub Packages registry
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "20.9.0"
+        registry-url: "https://npm.pkg.github.com"
+        scope: "@hunterkilltree"
+
+    # Install dependencies using npm ci for faster installation
+    - name: Install dependencies
+      run: npm ci
+
+    # Run npm build
+    - name: Build project
+      run: npm run build
+
+    # Check if the build succeeded or failed
+    - name: Check Build Status
+      if: failure()
+      run: echo "Build failed!" && exit 1
+
+    # Success message when the build passes
+    - name: Build Success
+      if: success()
+      run: echo "Build succeeded!"
