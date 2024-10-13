@@ -1,5 +1,5 @@
 import type { FlowbiteTheme } from "./components/Flowbite/FlowbiteTheme";
-// import { accordionTheme } from "./components/Accordion/theme";
+import { accordionTheme } from "./components/Accordion/theme";
 // import { alertTheme } from "./components/Alert/theme";
 // import { avatarTheme } from "./components/Avatar/theme";
 // import { badgeTheme } from "./components/Badge/theme";
@@ -15,9 +15,9 @@ import { buttonGroupTheme, buttonTheme } from "./components/Button/theme";
 // import { drawerTheme } from "./components/Drawer/theme";
 // import { dropdownTheme } from "./components/Dropdown/theme";
 // import { fileInputTheme } from "./components/FileInput/theme";
-// import { floatingLabelTheme } from "./components/FloatingLabel/theme";
+import { floatingLabelTheme } from "./components/FloatingLabel/theme";
 // import { footerTheme } from "./components/Footer/theme";
-// import { helperTextTheme } from "./components/HelperText/theme";
+import { helperTextTheme } from "./components/HelperText/theme";
 // import { hrTheme } from "./components/HR/theme";
 // import { kbdTheme } from "./components/Kbd/theme";
 // import { labelTheme } from "./components/Label/theme";
@@ -38,14 +38,14 @@ import { spinnerTheme } from "./components/Spinner/theme";
 // import { tableTheme } from "./components/Table/theme";
 // import { tabTheme } from "./components/Tabs/theme";
 // import { textareaTheme } from "./components/Textarea/theme";
-// import { textInputTheme } from "./components/TextInput/theme";
+import { textInputTheme } from "./components/TextInput/theme";
 // import { timelineTheme } from "./components/Timeline/theme";
 // import { toastTheme } from "./components/Toast/theme";
 // import { toggleSwitchTheme } from "./components/ToggleSwitch/theme";
 // import { tooltipTheme } from "./components/Tooltip/theme";
 
 export const theme: FlowbiteTheme = {
-  // accordion: accordionTheme,
+  accordion: accordionTheme,
   // alert: alertTheme,
   // avatar: avatarTheme,
   // badge: badgeTheme,
@@ -62,9 +62,9 @@ export const theme: FlowbiteTheme = {
   // drawer: drawerTheme,
   // dropdown: dropdownTheme,
   // fileInput: fileInputTheme,
-  // floatingLabel: floatingLabelTheme,
+  floatingLabel: floatingLabelTheme,
   // footer: footerTheme,
-  // helperText: helperTextTheme,
+  helperText: helperTextTheme,
   // hr: hrTheme,
   // kbd: kbdTheme,
   // label: labelTheme,
@@ -81,7 +81,7 @@ export const theme: FlowbiteTheme = {
   // rating: ratingTheme,
   // ratingAdvanced: ratingAdvancedTheme,
   // select: selectTheme,
-  // textInput: textInputTheme,
+  textInput: textInputTheme,
   // textarea: textareaTheme,
   // toggleSwitch: toggleSwitchTheme,
   // sidebar: sidebarTheme,

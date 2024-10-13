@@ -1,5 +1,5 @@
 import type { DeepPartial } from "../../types";
-// import type { FlowbiteAccordionTheme } from "../Accordion";
+import type { FlowbiteAccordionTheme } from "../Accordion";
 // import type { FlowbiteAlertTheme } from "../Alert";
 // import type { FlowbiteAvatarTheme } from "../Avatar";
 // import type { FlowbiteBadgeTheme } from "../Badge";
@@ -15,9 +15,9 @@ import type { FlowbiteButtonGroupTheme, FlowbiteButtonTheme } from "../Button";
 // import type { FlowbiteDrawerTheme } from "../Drawer";
 // import type { FlowbiteDropdownTheme } from "../Dropdown";
 // import type { FlowbiteFileInputTheme } from "../FileInput";
-// import type { FlowbiteFloatingLabelTheme } from "../FloatingLabel";
+import type { FlowbiteFloatingLabelTheme } from "../FloatingLabel";
 // import type { FlowbiteFooterTheme } from "../Footer";
-// import type { FlowbiteHelperTextTheme } from "../HelperText";
+import type { FlowbiteHelperTextTheme } from "../HelperText";
 // import type { FlowbiteHRTheme } from "../HR/HR";
 // import type { FlowbiteKbdTheme } from "../Kbd";
 // import type { FlowbiteLabelTheme } from "../Label";
@@ -38,7 +38,7 @@ import type { FlowbiteSpinnerTheme } from "../Spinner";
 // import type { FlowbiteTableTheme } from "../Table";
 // import type { FlowbiteTabsTheme } from "../Tabs";
 // import type { FlowbiteTextareaTheme } from "../Textarea";
-// import type { FlowbiteTextInputTheme } from "../TextInput";
+import type { FlowbiteTextInputTheme } from "../TextInput";
 // import type { FlowbiteTimelineTheme } from "../Timeline";
 // import type { FlowbiteToastTheme } from "../Toast";
 // import type { FlowbiteToggleSwitchTheme } from "../ToggleSwitch";
@@ -47,7 +47,7 @@ import type { FlowbiteSpinnerTheme } from "../Spinner";
 export type CustomFlowbiteTheme = DeepPartial<FlowbiteTheme>;
 
 export interface FlowbiteTheme {
-  // accordion: FlowbiteAccordionTheme;
+  accordion: FlowbiteAccordionTheme;
   // alert: FlowbiteAlertTheme;
   // avatar: FlowbiteAvatarTheme;
   // badge: FlowbiteBadgeTheme;
@@ -64,9 +64,9 @@ export interface FlowbiteTheme {
   // drawer: FlowbiteDrawerTheme;
   // dropdown: FlowbiteDropdownTheme;
   // fileInput: FlowbiteFileInputTheme;
-  // floatingLabel: FlowbiteFloatingLabelTheme;
+  floatingLabel: FlowbiteFloatingLabelTheme;
   // footer: FlowbiteFooterTheme;
-  // helperText: FlowbiteHelperTextTheme;
+  helperText: FlowbiteHelperTextTheme;
   // hr: FlowbiteHRTheme;
   // kbd: FlowbiteKbdTheme;
   // label: FlowbiteLabelTheme;
@@ -88,7 +88,7 @@ export interface FlowbiteTheme {
   // table: FlowbiteTableTheme;
   // tabs: FlowbiteTabsTheme;
   // textarea: FlowbiteTextareaTheme;
-  // textInput: FlowbiteTextInputTheme;
+  textInput: FlowbiteTextInputTheme;
   // timeline: FlowbiteTimelineTheme;
   // toast: FlowbiteToastTheme;
   // toggleSwitch: FlowbiteToggleSwitchTheme;
