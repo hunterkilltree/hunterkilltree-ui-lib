@@ -17,7 +17,7 @@ import { buttonGroupTheme, buttonTheme } from "./components/Button/theme";
 // import { fileInputTheme } from "./components/FileInput/theme";
 import { floatingLabelTheme } from "./components/FloatingLabel/theme";
 // import { footerTheme } from "./components/Footer/theme";
-// import { helperTextTheme } from "./components/HelperText/theme";
+import { helperTextTheme } from "./components/HelperText/theme";
 // import { hrTheme } from "./components/HR/theme";
 // import { kbdTheme } from "./components/Kbd/theme";
 // import { labelTheme } from "./components/Label/theme";
@@ -38,7 +38,7 @@ import { spinnerTheme } from "./components/Spinner/theme";
 // import { tableTheme } from "./components/Table/theme";
 // import { tabTheme } from "./components/Tabs/theme";
 // import { textareaTheme } from "./components/Textarea/theme";
-// import { textInputTheme } from "./components/TextInput/theme";
+import { textInputTheme } from "./components/TextInput/theme";
 // import { timelineTheme } from "./components/Timeline/theme";
 // import { toastTheme } from "./components/Toast/theme";
 // import { toggleSwitchTheme } from "./components/ToggleSwitch/theme";
@@ -64,7 +64,7 @@ export const theme: FlowbiteTheme = {
   // fileInput: fileInputTheme,
   floatingLabel: floatingLabelTheme,
   // footer: footerTheme,
-  // helperText: helperTextTheme,
+  helperText: helperTextTheme,
   // hr: hrTheme,
   // kbd: kbdTheme,
   // label: labelTheme,
@@ -81,7 +81,7 @@ export const theme: FlowbiteTheme = {
   // rating: ratingTheme,
   // ratingAdvanced: ratingAdvancedTheme,
   // select: selectTheme,
-  // textInput: textInputTheme,
+  textInput: textInputTheme,
   // textarea: textareaTheme,
   // toggleSwitch: toggleSwitchTheme,
   // sidebar: sidebarTheme,
