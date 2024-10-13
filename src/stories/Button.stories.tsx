@@ -15,6 +15,20 @@ export default {
       options: ["xs", "sm", "md", "lg", "xl"],
       control: { type: "inline-radio" },
     },
+    pill: {
+      control: { type: "boolean" },
+    },
+    outline: {
+      control: { type: "boolean" },
+    },
+    gradientDuoTone: {
+      options: Object.keys(theme.button.gradientDuoTone),
+      control: { type: "inline-radio" },
+    },
+    // gradientMonochrome: {
+    //   options: Object.keys(theme.button.gradientMonochrome),
+    //   control: { type: "inline-radio" },
+    // },
   },
   args: {
     disabled: false,
