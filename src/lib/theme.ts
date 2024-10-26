@@ -8,7 +8,7 @@ import { accordionTheme } from "./components/Accordion/theme";
 import { buttonGroupTheme, buttonTheme } from "./components/Button/theme";
 // import { cardTheme } from "./components/Card/theme";
 // import { carouselTheme } from "./components/Carousel/theme";
-// import { checkboxTheme } from "./components/Checkbox/theme";
+import { checkboxTheme } from "./components/Checkbox/theme";
 // import { clipboardTheme } from "./components/Clipboard/theme";
 // import { darkThemeToggleTheme } from "./components/DarkThemeToggle/theme";
 // import { datePickerTheme } from "./components/Datepicker/theme";
@@ -55,7 +55,7 @@ export const theme: FlowbiteTheme = {
   buttonGroup: buttonGroupTheme,
   // card: cardTheme,
   // carousel: carouselTheme,
-  // checkbox: checkboxTheme,
+  checkbox: checkboxTheme,
   // clipboard: clipboardTheme,
   // datepicker: datePickerTheme,
   // darkThemeToggle: darkThemeToggleTheme,
