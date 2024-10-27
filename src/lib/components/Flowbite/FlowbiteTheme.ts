@@ -8,7 +8,7 @@ import type { FlowbiteAccordionTheme } from "../Accordion";
 import type { FlowbiteButtonGroupTheme, FlowbiteButtonTheme } from "../Button";
 // import type { FlowbiteCardTheme } from "../Card";
 // import type { FlowbiteCarouselTheme } from "../Carousel";
-// import type { FlowbiteCheckboxTheme } from "../Checkbox";
+import type { FlowbiteCheckboxTheme } from "../Checkbox";
 // import type { FlowbiteClipboardTheme } from "../Clipboard";
 // import type { FlowbiteDarkThemeToggleTheme } from "../DarkThemeToggle";
 // import type { FlowbiteDatepickerTheme } from "../Datepicker";
@@ -57,7 +57,7 @@ export interface FlowbiteTheme {
   buttonGroup: FlowbiteButtonGroupTheme;
   // card: FlowbiteCardTheme;
   // carousel: FlowbiteCarouselTheme;
-  // checkbox: FlowbiteCheckboxTheme;
+  checkbox: FlowbiteCheckboxTheme;
   // clipboard: FlowbiteClipboardTheme;
   // darkThemeToggle: FlowbiteDarkThemeToggleTheme;
   // datepicker: FlowbiteDatepickerTheme;
