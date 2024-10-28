@@ -5,3 +5,4 @@ export { Label } from "./components/Label";
 export { Input } from "./components/Input";
 export { TextInput} from "./components/TextInput";
 export { Checkbox } from "./components/Checkbox";
+export { Card } from "./components/Card";
