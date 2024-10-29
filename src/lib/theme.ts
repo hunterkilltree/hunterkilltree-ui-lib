@@ -29,7 +29,7 @@ import { helperTextTheme } from "./components/HelperText/theme";
 // import { paginationTheme } from "./components/Pagination/theme";
 // import { popoverTheme } from "./components/Popover/theme";
 // import { progressTheme } from "./components/Progress/theme";
-// import { radioTheme } from "./components/Radio/theme";
+import { radioTheme } from "./components/Radio/theme";
 // import { rangeSliderTheme } from "./components/RangeSlider/theme";
 // import { ratingAdvancedTheme, ratingTheme } from "./components/Rating/theme";
 // import { selectTheme } from "./components/Select/theme";
@@ -76,7 +76,7 @@ export const theme: FlowbiteTheme = {
   // pagination: paginationTheme,
   // popover: popoverTheme,
   // progress: progressTheme,
-  // radio: radioTheme,
+  radio: radioTheme,
   // rangeSlider: rangeSliderTheme,
   // rating: ratingTheme,
   // ratingAdvanced: ratingAdvancedTheme,
