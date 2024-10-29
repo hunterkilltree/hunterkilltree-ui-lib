@@ -1,8 +1,13 @@
-import { Button } from "./lib/main";
+import { Button, ButtonGroup } from "./lib/main";
 
 function App() {
   return (
     <div className="flex flex-wrap gap-2">
+      <ButtonGroup>
+        <Button color="blue">Profile</Button>
+        <Button color="gray">Settings</Button>
+        <Button color="gray">Messages</Button>
+      </ButtonGroup>
       <Button>Default</Button>
       <Button color="blue">Blue</Button>
       <Button color="gray">Gray</Button>

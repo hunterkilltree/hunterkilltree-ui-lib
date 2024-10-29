@@ -1,4 +1,7 @@
-import type { CustomFlowbiteTheme, FlowbiteTheme } from "../components/Flowbite";
+import type {
+  CustomFlowbiteTheme,
+  FlowbiteTheme,
+} from "../components/Flowbite";
 import { cloneDeep } from "../helpers/clone-deep";
 import { mergeDeep } from "../helpers/merge-deep";
 import type { ThemeMode } from "../hooks/use-theme-mode";
@@ -26,7 +29,5 @@ export function setTheme(theme?: CustomFlowbiteTheme) {
 }
 
 export function getTheme(): FlowbiteTheme {
-  console.log("we are here");
-  
   return cloneDeep(store.theme);
 }
