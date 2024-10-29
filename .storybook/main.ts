@@ -1,7 +1,5 @@
-import type { StorybookConfig } from "@storybook/react-vite";
-
-const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+export default {
+  stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx|mdx)"],
   addons: [
     "@storybook/addon-onboarding",
     "@storybook/addon-links",
@@ -9,9 +7,16 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
+  core: {
+    builder: "@storybook/builder-vite",
+  },
+  typescript: {
+    // Enables the `react-docgen-typescript` parser.
+    // See https://storybook.js.org/docs/api/main-config/main-config-typescript for more information about this option.
+    reactDocgen: "react-docgen-typescript",
+  },
   framework: {
     name: "@storybook/react-vite",
     options: {},
   },
 };
-export default config;

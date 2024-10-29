@@ -1,18 +1,18 @@
 import type { Meta, StoryFn } from "@storybook/react";
-import { Button } from "../lib/components/Button";
+import { ButtonGroup, Button } from "../lib/components/Button";
 import type { ButtonGroupProps } from "../lib/components/Button";
 
 export default {
-  title: "Components/Button",
-  component: Button.Group,
+  title: "Components/Button Group",
+  component: ButtonGroup,
 } as Meta;
 
 const Template: StoryFn<ButtonGroupProps> = (args) => (
-  <Button.Group {...args}>
+  <ButtonGroup {...args}>
     <Button color="gray">Profile</Button>
     <Button color="gray">Settings</Button>
     <Button color="gray">Messages</Button>
-  </Button.Group>
+  </ButtonGroup>
 );
 
 export const DefaultAvatarGroup = Template.bind({});

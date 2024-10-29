@@ -6,9 +6,9 @@ import type { FlowbiteAccordionTheme } from "../Accordion";
 // import type { FlowbiteBlockquoteTheme } from "../Blockquote";
 // import type { FlowbiteBreadcrumbTheme } from "../Breadcrumb";
 import type { FlowbiteButtonGroupTheme, FlowbiteButtonTheme } from "../Button";
-// import type { FlowbiteCardTheme } from "../Card";
+import type { FlowbiteCardTheme } from "../Card";
 // import type { FlowbiteCarouselTheme } from "../Carousel";
-// import type { FlowbiteCheckboxTheme } from "../Checkbox";
+import type { FlowbiteCheckboxTheme } from "../Checkbox";
 // import type { FlowbiteClipboardTheme } from "../Clipboard";
 // import type { FlowbiteDarkThemeToggleTheme } from "../DarkThemeToggle";
 // import type { FlowbiteDatepickerTheme } from "../Datepicker";
@@ -55,9 +55,9 @@ export interface FlowbiteTheme {
   // breadcrumb: FlowbiteBreadcrumbTheme;
   button: FlowbiteButtonTheme;
   buttonGroup: FlowbiteButtonGroupTheme;
-  // card: FlowbiteCardTheme;
+  card: FlowbiteCardTheme;
   // carousel: FlowbiteCarouselTheme;
-  // checkbox: FlowbiteCheckboxTheme;
+  checkbox: FlowbiteCheckboxTheme;
   // clipboard: FlowbiteClipboardTheme;
   // darkThemeToggle: FlowbiteDarkThemeToggleTheme;
   // datepicker: FlowbiteDatepickerTheme;
@@ -124,7 +124,8 @@ export interface FlowbiteColors extends FlowbiteStateColors {
   yellow: string;
 }
 
-export interface FlowbiteGradientColors extends Omit<FlowbiteStateColors, "warning"> {
+export interface FlowbiteGradientColors
+  extends Omit<FlowbiteStateColors, "warning"> {
   [key: string]: string;
   cyan: string;
   lime: string;
