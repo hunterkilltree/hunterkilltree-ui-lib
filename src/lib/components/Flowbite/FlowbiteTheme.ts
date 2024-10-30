@@ -29,7 +29,7 @@ import type { FlowbiteHelperTextTheme } from "../HelperText";
 // import type { FlowbitePaginationTheme } from "../Pagination";
 // import type { FlowbitePopoverTheme } from "../Popover";
 // import type { FlowbiteProgressTheme } from "../Progress";
-// import type { FlowbiteRadioTheme } from "../Radio";
+import type { FlowbiteRadioTheme } from "../Radio";
 // import type { FlowbiteRangeSliderTheme } from "../RangeSlider";
 // import type { FlowbiteRatingAdvancedTheme, FlowbiteRatingTheme } from "../Rating";
 // import type { FlowbiteSelectTheme } from "../Select";
@@ -78,7 +78,7 @@ export interface FlowbiteTheme {
   // pagination: FlowbitePaginationTheme;
   // popover: FlowbitePopoverTheme;
   // progress: FlowbiteProgressTheme;
-  // radio: FlowbiteRadioTheme;
+  radio: FlowbiteRadioTheme;
   // rangeSlider: FlowbiteRangeSliderTheme;
   // rating: FlowbiteRatingTheme;
   // ratingAdvanced: FlowbiteRatingAdvancedTheme;
