@@ -1,4 +1,5 @@
 export { Button, ButtonGroup } from "./components/Button";
+export { Datepicker} from "./components/Datepicker";
 export { Spinner } from "./components/Spinner";
 export { FloatingLabel } from "./components/FloatingLabel";
 export { Label } from "./components/Label";
