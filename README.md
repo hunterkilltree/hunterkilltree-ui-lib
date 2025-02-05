@@ -13,6 +13,7 @@ git push origin feature-branch --force-with-lease # safer because it ensures you
 
 ```
 # Create new branch from master v0.0.x
+# Update version on package.json
 # Pr merge to release
 
 ```
