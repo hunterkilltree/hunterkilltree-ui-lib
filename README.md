@@ -1,5 +1,15 @@
 # hunterkilltree-ui-lib
 
+### Git rebase to resolve mater conflict
+```
+git pull
+git rebase master
+git rebase --continue
+git push origin feature-branch --force-with-lease # safer because it ensures you don’t accidentally overwrite someone else’s changes
+
+
+```
+
 ### Tech
 
 typescript + vite + react + tailwind + storybook
