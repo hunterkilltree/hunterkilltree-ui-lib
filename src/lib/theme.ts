@@ -11,7 +11,7 @@ import { cardTheme } from "./components/Card/theme";
 import { checkboxTheme } from "./components/Checkbox/theme";
 // import { clipboardTheme } from "./components/Clipboard/theme";
 // import { darkThemeToggleTheme } from "./components/DarkThemeToggle/theme";
-// import { datePickerTheme } from "./components/Datepicker/theme";
+import { datePickerTheme } from "./components/Datepicker/theme";
 // import { drawerTheme } from "./components/Drawer/theme";
 // import { dropdownTheme } from "./components/Dropdown/theme";
 // import { fileInputTheme } from "./components/FileInput/theme";
@@ -29,9 +29,9 @@ import { helperTextTheme } from "./components/HelperText/theme";
 // import { paginationTheme } from "./components/Pagination/theme";
 // import { popoverTheme } from "./components/Popover/theme";
 // import { progressTheme } from "./components/Progress/theme";
-// import { radioTheme } from "./components/Radio/theme";
+import { radioTheme } from "./components/Radio/theme";
 // import { rangeSliderTheme } from "./components/RangeSlider/theme";
-// import { ratingAdvancedTheme, ratingTheme } from "./components/Rating/theme";
+import { ratingAdvancedTheme, ratingTheme } from "./components/Rating/theme";
 // import { selectTheme } from "./components/Select/theme";
 // import { sidebarTheme } from "./components/Sidebar/theme";
 import { spinnerTheme } from "./components/Spinner/theme";
@@ -57,7 +57,7 @@ export const theme: FlowbiteTheme = {
   // carousel: carouselTheme,
   checkbox: checkboxTheme,
   // clipboard: clipboardTheme,
-  // datepicker: datePickerTheme,
+  datepicker: datePickerTheme,
   // darkThemeToggle: darkThemeToggleTheme,
   // drawer: drawerTheme,
   // dropdown: dropdownTheme,
@@ -76,10 +76,10 @@ export const theme: FlowbiteTheme = {
   // pagination: paginationTheme,
   // popover: popoverTheme,
   // progress: progressTheme,
-  // radio: radioTheme,
+  radio: radioTheme,
   // rangeSlider: rangeSliderTheme,
-  // rating: ratingTheme,
-  // ratingAdvanced: ratingAdvancedTheme,
+  rating: ratingTheme,
+  ratingAdvanced: ratingAdvancedTheme,
   // select: selectTheme,
   textInput: textInputTheme,
   // textarea: textareaTheme,
