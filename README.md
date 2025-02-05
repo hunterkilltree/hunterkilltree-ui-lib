@@ -1,12 +1,19 @@
 # hunterkilltree-ui-lib
 
 ### Git rebase to resolve mater conflict
+
 ```
 git pull
 git rebase master
 git rebase --continue
 git push origin feature-branch --force-with-lease # safer because it ensures you don’t accidentally overwrite someone else’s changes
+```
 
+### How to release new version
+
+```
+# Create new branch from master v0.0.x
+# Pr merge to release
 
 ```
 
@@ -48,7 +55,7 @@ npm run build
 ### Start storybook
 
 ```
-npm run storybook 
+npm run storybook
 ```
 
 ### Git tree
