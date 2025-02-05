@@ -11,7 +11,7 @@ import type { FlowbiteCardTheme } from "../Card";
 import type { FlowbiteCheckboxTheme } from "../Checkbox";
 // import type { FlowbiteClipboardTheme } from "../Clipboard";
 // import type { FlowbiteDarkThemeToggleTheme } from "../DarkThemeToggle";
-// import type { FlowbiteDatepickerTheme } from "../Datepicker";
+import type { FlowbiteDatepickerTheme } from "../Datepicker";
 // import type { FlowbiteDrawerTheme } from "../Drawer";
 // import type { FlowbiteDropdownTheme } from "../Dropdown";
 // import type { FlowbiteFileInputTheme } from "../FileInput";
@@ -60,7 +60,7 @@ export interface FlowbiteTheme {
   checkbox: FlowbiteCheckboxTheme;
   // clipboard: FlowbiteClipboardTheme;
   // darkThemeToggle: FlowbiteDarkThemeToggleTheme;
-  // datepicker: FlowbiteDatepickerTheme;
+  datepicker: FlowbiteDatepickerTheme;
   // drawer: FlowbiteDrawerTheme;
   // dropdown: FlowbiteDropdownTheme;
   // fileInput: FlowbiteFileInputTheme;
